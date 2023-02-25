@@ -6,20 +6,21 @@ window.onload = function WindowLoad(event) {
 
 function addTodoItem(event) {
     event.preventDefault();
+    let inputs = document.querySelector(".input-group").getElementsByTagName("input");
     node = node.cloneNode(true);
     node.querySelector("input").checked = false;
 
-    if(input[0].value === "") {
+    if(inputs[0].value === "") {
         alert("You did not add anything.");
     } else {
-        node.querySelector("#content").textContent = input[0].value;
-        if(input[1].value == "") {
+        node.querySelector("#content").textContent = inputs[0].value;
+        if(inputs[1].value == "") {
             var today = new Date();
             var tzoffset = today.getTimezoneOffset() * 60000; //offset in milliseconds
             var localISOTime = (new Date(Date.now() - tzoffset)).toISOString().slice(0,10);
-            input[1].value = localISOTime;
+            inputs[1].value = localISOTime;
         }
-        node.querySelector("#date").textContent = input[1].value.replaceAll("-","/");
+        node.querySelector("#date").textContent = inputs[1].value.replaceAll("-","/");
         document.querySelector('ul').appendChild(node);
     }
 }
