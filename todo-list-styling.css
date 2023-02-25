@@ -1,0 +1,81 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-style: italic;
+    font-weight: bold;
+    color: aliceblue;
+}
+ul{
+    list-style: none; 
+}
+li {
+    min-width:400px;
+    max-width:700px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    background-color: rgba(240, 248, 255, 0.76);
+    border-radius: 30px; 
+    padding:10px;
+    min-height:100px;
+}
+body{
+    background: rgb(154,171,255);
+    background: radial-gradient(circle, #9aabff 0%, rgba(255,157,177,1) 100%);
+    background-attachment: fixed;
+}
+.box-one{
+    min-height: 50px;
+    background: rgba(225,255,255,.2);
+    border-radius: 15px;
+    padding:15px;
+    margin:25px;
+}
+.box-two{
+    min-height: 50px;
+    background: rgba(225,255,255,.2);
+    border-radius: 15px;
+    padding:15px;
+    margin:25px;
+}
+.btn-outline-dark{
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 25px;
+}
+.btn-outline-success {
+    float: right;
+    width: 70px;
+    height: 30px;
+    font-size: small;
+    font-weight: bold;
+    padding: 0px;
+    
+    border-radius: 15px;
+    
+}
+.btn-outline-danger {
+    float: right;
+    margin-right: 5px;
+    width: 70px;
+    height: 30px;
+    font-size: small;
+    font-weight: bold;
+    padding: 0px;
+    border-radius: 15px;
+
+}
+.form-check-input {
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.data {
+    padding:10px;
+    word-wrap: break-word;
+    overflow: hidden;
+    
+}
+#date {
+    font-weight:bold;
+}
